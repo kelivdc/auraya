@@ -1,9 +1,10 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 
 function Kelebihan() {
   return (
     <>
+    <Box sx={{maxWidth: "1024px", margin: "auto"}}>
       <Typography
         variant="h2"
         sx={{
@@ -64,6 +65,7 @@ function Kelebihan() {
         lokasi yang strategis, ini adalah tempat yang sempurna untuk tinggal
         bagi mereka yang menginginkan gaya hidup perkotaan yang berkualitas.
       </Typography>
+      </Box>
     </>
   );
 }
