@@ -9,7 +9,8 @@ function Lokasi() {
         sx={{
           border: "solid 1px #ccc",
           padding: "15px",
-          margin: "25px",
+          margin: "auto",
+          maxWidth: "1024px",
           lineHeight: "1.8",
         }}
       >
