@@ -4,8 +4,8 @@ import './globals.css'
 // const font = Roboto({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Auraya Apartemen - Jakarta Barat',
-  description: 'Tersedia beberapa tipe unit apartemen dimulai harga 500jtan',
+  title: 'Auraya Suites Apartemen - Tangerang',
+  description: 'Tersedia beberapa tipe unit apartemen dimulai harga 500jtan, Alam Sutera Boulevard',
 }
 
 export default function RootLayout({ children }) {
