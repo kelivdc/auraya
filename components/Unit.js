@@ -78,7 +78,7 @@ function Unit(props) {
             </Grid>
             <Grid item xs={12} md={4}>
               <Image
-                src="/studio3.png"
+                src="/studio4.png"
                 width={509}
                 height={651}
                 layout="responsive"
