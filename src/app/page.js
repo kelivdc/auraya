@@ -9,6 +9,7 @@ import Unit from "../../components/Unit";
 import Kelebihan from "../../components/Kelebihan";
 import Hubungi from "../../components/Hubungi";
 import Lokasi from "../../components/Lokasi";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -111,12 +112,12 @@ export default function Home() {
                     padding: "15px",
                   }}
                 >
-                  <strong>Auraya Suites</strong> adalah sebuah kompleks apartemen mewah yang menawarkan hunian yang
-                  elegan dan fasilitas yang lengkap. Dalam konten ini, kami akan
-                  membahas mengenai apartemen Auraya Suites, lokasinya yang
-                  strategis, desain interior yang modern, fasilitas yang
-                  disediakan, dan kenyamanan hidup yang dapat Anda nikmati di
-                  sini.
+                  <strong>Auraya Suites</strong> adalah sebuah kompleks
+                  apartemen mewah yang menawarkan hunian yang elegan dan
+                  fasilitas yang lengkap. Dalam konten ini, kami akan membahas
+                  mengenai apartemen Auraya Suites, lokasinya yang strategis,
+                  desain interior yang modern, fasilitas yang disediakan, dan
+                  kenyamanan hidup yang dapat Anda nikmati di sini.
                 </Typography>
                 <Chip
                   label="Mulai dari Rp. 500jt an"
@@ -128,18 +129,23 @@ export default function Home() {
                     display: "flex",
                   }}
                 />
-                <Button
-                  variant="outlined"
-                  color="success"
-                  sx={{
-                    textAlign: "center",
-                    margin: "auto",
-                    marginY: "10px",
-                    display: "flex",
-                  }}
+                <Link
+                  href="https://wa.me/6281222226880?text=Halo..Marketing Auraya Suites Apartemen, saya berminat dengan apartemen ini, boleh minta brosurnya ? Terima kasih"
+                  passHref
                 >
-                  E-Brochure
-                </Button>
+                  <Button
+                    variant="outlined"
+                    color="success"
+                    sx={{
+                      textAlign: "center",
+                      margin: "auto",
+                      marginY: "10px",
+                      display: "flex",
+                    }}
+                  >
+                    E-Brochure
+                  </Button>
+                </Link>
               </Box>
             </Grid>
           </Grid>
@@ -157,7 +163,7 @@ export default function Home() {
           />
         </Box>
         <Unit />
-        
+
         <Kelebihan />
         <Lokasi />
         <Hubungi />
