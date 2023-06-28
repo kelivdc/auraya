@@ -30,8 +30,7 @@ export default function SimpleBottomNavigation() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction label="E-Brochure" icon={<RestoreIcon />} onClick={() => handleNavigation('https://wa.me/6281222226880?text=Halo..Marketing Auraya Suites Apartemen, saya berminat dengan apartemen ini, boleh minta brosurnya ? Terima kasih')} />
-          <BottomNavigationAction label="Lokasi" icon={<LocationOnIcon />} onClick={() => handleNavigation('https://wa.me/6281222226880?text=Halo..Marketing Auraya Suites Apartemen, saya berminat dengan apartemen ini, boleh tanya lokasi apartemen ini ? Terima kasih')} />
+          <BottomNavigationAction label="E-Brochure" icon={<RestoreIcon />} onClick={() => handleNavigation('https://wa.me/6281222226880?text=Halo..Marketing Auraya Suites Apartemen, saya berminat dengan apartemen ini, boleh minta brosurnya ? Terima kasih')} />          
           <BottomNavigationAction label="Hubungi" icon={<WhatsAppIcon />} onClick={() => handleNavigation('https://wa.me/6281222226880?text=Halo..Marketing Auraya Suites Apartemen, saya berminat dengan apartemen ini, boleh info lengkap ? Terima kasih')} />
         </BottomNavigation>
       </Box>
