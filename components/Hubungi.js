@@ -7,13 +7,13 @@ function Hubungi() {
     <>
       <Card
         sx={{
-          border: "solid 1px #ccc",
           padding: "15px",
           marginTop: "25px",
           margin: "auto",
           maxWidth: "1024px",
           lineHeight: "1.8",
         }}
+        elevation={0}
       >
         Hubungi Marketing Official:
         <br />

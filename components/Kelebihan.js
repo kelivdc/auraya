@@ -16,7 +16,7 @@ function Kelebihan() {
       </Typography>
       <Typography
         sx={{
-          color: "#61939b",
+          color: "#555",
           fontWeight: "normal",
           padding: "15px",
         }}

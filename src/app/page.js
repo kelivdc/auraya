@@ -2,7 +2,7 @@
 
 // import Image from 'next/image'
 import styles from "./page.module.css";
-import { Box, Button, Chip, Grid, Stack, Typography } from "@mui/material";
+import { Box, Button, Chip, Container, CssBaseline, Grid, Stack, ThemeProvider, Typography, createTheme } from "@mui/material";
 import Image from "next/image";
 import Footer from "../../components/Footer";
 import Unit from "../../components/Unit";
@@ -11,9 +11,29 @@ import Hubungi from "../../components/Hubungi";
 import Lokasi from "../../components/Lokasi";
 import Link from "next/link";
 
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1040,
+      xl: 1536,
+    },
+  },
+  typography: {
+    body1: {
+      fontFamily: "Mulish",
+    },
+  }
+});
+
 export default function Home() {
   return (
     <>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Container maxWidth="lg">
       <Box
         sx={{
           backgroundColor: "#4f878f",
@@ -45,7 +65,7 @@ export default function Home() {
         <Typography
           variant="h2"
           sx={{
-            color: "#61939b",
+            color: "#555",
             margin: "auto",
             paddingBottom: "15px",
             textAlign: "center",
@@ -93,7 +113,7 @@ export default function Home() {
                 <Typography
                   variant="h2"
                   sx={{
-                    color: "#61939b",
+                    color: "#555",
                     fontWeight: "bold",
                     textAlign: "center",
                   }}
@@ -106,7 +126,7 @@ export default function Home() {
                 </Typography>
                 <Typography
                   sx={{
-                    color: "#61939b",
+                    color: "#555",
                     fontWeight: "normal",
                     textAlign: "center",
                     padding: "15px",
@@ -166,7 +186,6 @@ export default function Home() {
 
         <Kelebihan />
         <Lokasi />
-        <Hubungi />
         <Box
           sx={{
             marginBottom: "50px",
@@ -182,6 +201,8 @@ export default function Home() {
         </Box>
       </Box>
       <Footer />
+      </Container>
+      </ThemeProvider>
     </>
   );
 }

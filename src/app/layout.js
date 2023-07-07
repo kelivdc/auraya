@@ -1,7 +1,4 @@
 import './globals.css'
-// import { Roboto } from 'next/font/google'
-
-// const font = Roboto({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Auraya Suites Apartemen - Tangerang',
@@ -11,6 +8,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />
+      </head>
       <script src="/tawk.js" async />
       <body>{children}</body>
     </html>
